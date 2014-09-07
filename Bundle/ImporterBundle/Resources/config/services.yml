@@ -1,0 +1,13 @@
+parameters:
+    glocal.importer.class: Glocal\Bundle\ImporterBundle\Controller\ImporterController 
+    glocal.importer.format: "png"
+    glocal.importer.size: 100% 
+    glocal.importer.quality: 100
+    glocal.importer.location: /Users/kirankotresh/img
+    
+services:
+     glocal.importer:
+        class: "%glocal.importer.class%" 
+        arguments: [%glocal.importer.format%,%glocal.importer.size%,%glocal.importer.quality%,%glocal.importer.location%]
+ 
+ 
