@@ -16,6 +16,8 @@ class ImporterController {
     }
 
     public function convertPdfToImage($srcFile) {
+        
+        $demo;
 
         $destFile = basename($srcFile, ".pdf");
         $destFile = $this->location . '/' . $destFile . '.' . $this->format;
